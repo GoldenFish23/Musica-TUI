@@ -46,17 +46,23 @@ class TrackManager:
         """
         self.tracks = [] # Reset tracks
         try:
-            with open("settings.json", "r") as f:
+            # Get path relative to the script location
+            base_path = os.path.dirname(os.path.abspath(__file__))
+            settings_path = os.path.join(base_path, "settings.json")
+            
+            with open(settings_path, "r") as f:
                 settings = json.load(f)
             paths = settings["settings"]["scan_paths"]
             for path in paths:
                 if os.path.exists(path):
-                    # Append new tracks found in this path
+                    # Append new tracks found in this path (Case-insensitive check)
                     new_tracks = [
                         TrackItem(f, os.path.join(path, f)) 
-                        for f in os.listdir(path) if f.endswith(".mp3")
+                        for f in os.listdir(path) if f.lower().endswith(".mp3")
                     ]
                     self.tracks.extend(new_tracks)
+                else:
+                    print(f"Warning: Scan path '{path}' does not exist.")
         except Exception as e:
             print(f"Error scanning tracks: {e}")
         return self.tracks  
@@ -160,7 +166,9 @@ class MusicApp(App):
 
     def load_settings(self):
         try:
-            with open("settings.json", "r") as f:
+            base_path = os.path.dirname(os.path.abspath(__file__))
+            settings_path = os.path.join(base_path, "settings.json")
+            with open(settings_path, "r") as f:
                 settings = json.load(f)
             self.current_theme_name = settings["settings"].get("theme", "default")
             self.visualizer_enabled = settings["settings"].get("visualizer") != "disabled"
@@ -170,10 +178,12 @@ class MusicApp(App):
 
     def save_settings(self):
         try:
-            with open("settings.json", "r") as f:
+            base_path = os.path.dirname(os.path.abspath(__file__))
+            settings_path = os.path.join(base_path, "settings.json")
+            with open(settings_path, "r") as f:
                 settings = json.load(f)
             settings["settings"]["theme"] = self.current_theme_name
-            with open("settings.json", "w") as f:
+            with open(settings_path, "w") as f:
                 json.dump(settings, f, indent=4)
         except Exception as e:
             self.notify(f"Error saving settings: {e}", severity="error")
@@ -276,10 +286,12 @@ class MusicApp(App):
 
     def save_settings_visualizer(self):
         try:
-            with open("settings.json", "r") as f:
+            base_path = os.path.dirname(os.path.abspath(__file__))
+            settings_path = os.path.join(base_path, "settings.json")
+            with open(settings_path, "r") as f:
                 settings = json.load(f)
             settings["settings"]["visualizer"] = "enabled" if self.visualizer_enabled else "disabled"
-            with open("settings.json", "w") as f:
+            with open(settings_path, "w") as f:
                 json.dump(settings, f, indent=4)
         except Exception:
             pass

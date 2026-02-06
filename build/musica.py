@@ -123,6 +123,9 @@ class MusicApp(App):
         dock: top;
         margin-bottom: 1;
     }
+    #main-container {
+        height: 1fr;
+    }
     ListView {
         width: 30%;
         height: 100%;
@@ -351,7 +354,5 @@ class MusicApp(App):
                     self.notify("Playback finished.")
 
 if __name__ == "__main__":
-    # Resize terminal to "Mini Player" size (approx 60x20)
-    os.system("mode con: cols=60 lines=20")
     app = MusicApp()
     app.run()

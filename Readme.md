@@ -8,10 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ```text
-   __  ___              _            
-  /  |/  /_ _____ ____ (_)_______ _  
- / /|_/ / // (_-< / __/ / / __/ _ `/  
-/_/  /_/\_,_/___/ \__/_/ /_/\__/\_,_/   
+
 ```
 
 **Light-weight • Minimalist • High Performance**
@@ -43,15 +40,31 @@
 
 ## 🛠️ Installation
 
+You can set up all dependencies automatically using the provided scripts:
+
+### Windows:
+Simply run the installer script from the root directory:
+```batch
+install.bat
+```
+
+### Cross-platform / Manual:
+Run the Python installer script:
 ```bash
-# Install dependencies
-pip install textual rich just_playback
+python build/installer.py
 ```
 
 ## 🎮 Usage
 
+### Windows:
+Launch the app directly using the runner script:
+```batch
+run.bat
+```
+
+### Manual:
+Run the main script using Python:
 ```bash
-# Run the application
 python build/musica.py
 ```
 

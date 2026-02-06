@@ -1,4 +1,3 @@
-<div align="center">
 
 ```text
   __  __                 _                   
@@ -20,8 +19,6 @@
 *"The player that respects your system's resources as much as your playlist."*
 
 ---
-
-</div>
 
 ## 🚀 Why Musica?
 

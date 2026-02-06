@@ -20,28 +20,28 @@
 
 ---
 
-## 🚀 Why Musica?
+## Why Musica?
 
 Most modern music players consume 200MB to 600MB of RAM. **Musica** stays under **35MB**, making it the perfect companion for:
-- 🎮 **Gamers** who need zero background jitter.
-- 💻 **Developers** compiling heavy projects.
-- 🧪 **AI Researchers** running memory-intensive models.
-- 🎨 **Designers** working in CAD or high-res software.
+- **Gamers** who need zero background jitter.
+- **Developers** compiling heavy projects.
+- **AI Researchers** running memory-intensive models.
+- **Designers** working in CAD or high-res software.
 
 ---
 
-## ✨ Features
+## Features
 
-- **📂 Instant Track Scanning**: Automatically finds and organizes your library from custom paths.
-- **🌊 Fluid Visualizer**: A beautiful real-time wave visualizer (can be toggled live for zero-CPU mode).
-- **🎨 Dynamic Theming**: Nord, Monokai, Dracula, Sunset, and more. Tweak colors on the fly.
-- **🔁 Repeater Modes**: Loop single tracks or play your whole library.
-- **💾 JSON Persistance**: Your theme, visualizer state, and paths are remembered.
+- **Instant Track Scanning**: Automatically finds and organizes your library from custom paths.
+- **Fluid Visualizer**: A beautiful real-time wave visualizer (can be toggled live for zero-CPU mode).
+- **Dynamic Theming**: Nord, Monokai, Dracula, Sunset, and more. Tweak colors on the fly.
+- **Repeater Modes**: Loop single tracks or play your whole library.
+- **JSON Persistance**: Your theme, visualizer state, and paths are remembered.
 
 
 ---
 
-## ⌨️ Controls
+## Controls
 
 | Key | Action |
 | :--- | :--- |
@@ -56,14 +56,14 @@ Most modern music players consume 200MB to 600MB of RAM. **Musica** stays under 
 
 ---
 
-## 🛠️ Installation & Usage
+## Installation & Usage
 
-### 🚀 Get Started Fast (Windows)
+### Get Started Fast (Windows)
 1. Clone the repo.
 2. Run `install.bat` to set up dependencies.
 3. Run `run.bat` to enjoy!
 
-### 🐧 Cross-platform
+### Cross-platform
 ```bash
 python build/installer.py  # Install dependencies
 python build/musica.py     # Run the player
@@ -71,7 +71,7 @@ python build/musica.py     # Run the player
 
 ---
 
-## 🤝 How to Contribute
+## How to Contribute
 
 We love contributors! Whether you're a terminal wizard or just starting with Python, you can help:
 

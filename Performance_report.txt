@@ -12,7 +12,7 @@
 [ OVERVIEW ]
 Musica is designed for maximum efficiency on 8GB RAM systems. By using a TUI 
 (Text User Interface), it saves critical resources for your primary tasks 
-like Gaming, Coding, or AI Modeling.
+like Gaming, Coding, CAD Designing or AI Modeling.
 
 --------------------------------------------------------------------------------
 [ LIVE TEST RESULTS ]

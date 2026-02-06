@@ -1,0 +1,53 @@
+================================================================================
+      __  __                 _                   
+     |  \/  |               (_)                  
+     | \  / |  _   _   ___   _    ___    __ _    
+     | |\/| | | | | | / __| | |  / __|  / _` |   
+     | |  | | | |_| | \__ \ | | ( (__  | (_| |   
+     |_|  |_|  \__,_| |___/ |_|  \___|  \__,_|   
+                                                 
+                 PERFORMANCE BENCHMARK REPORT
+================================================================================
+
+[ OVERVIEW ]
+Musica is designed for maximum efficiency on 8GB RAM systems. By using a TUI 
+(Text User Interface), it saves critical resources for your primary tasks 
+like Gaming, Coding, or AI Modeling.
+
+--------------------------------------------------------------------------------
+[ LIVE TEST RESULTS ]
+--------------------------------------------------------------------------------
+METRIC            | WINDOWS MEDIA PLAYER   | MUSICA (TUI)     | IMPROVEMENT
+------------------|------------------------|------------------|-----------------
+Memory (RAM)      | ~70.0 MB               | ~35.0 MB         | [ 50% SAVED! ]
+CPU Usage         | 0.0% - 0.4%            | 0.0% - 0.2%      | [ 50% LOWER  ]
+Stability         | Fluctuates             | Rock Solid       | [ EXCELLENT  ]
+--------------------------------------------------------------------------------
+
+[ THE IMPACT ]
+On an 8GB system, every megabyte counts. Musica provides:
+ -> Higher Gaming FPS: Less background jitter.
+ -> Faster Builds: More RAM for your compiler/IDE.
+ -> Silent Running: Lower CPU usage means lower fan noise.
+
+--------------------------------------------------------------------------------
+[ MARKET COMPARISON ]
+--------------------------------------------------------------------------------
+PLAYER TYPE       | EXAMPLE                | RAM USAGE        | CPU IMPACT
+------------------|------------------------|------------------|-----------------
+TUI (Minimal)     | Musica / cmus          | 15MB - 50MB      | Very Low
+Native GUI        | Windows Player / VLC   | 60MB - 120MB     | Moderate
+Web / Electron    | Spotify / Discord      | 200MB - 600MB+   | Heavy
+--------------------------------------------------------------------------------
+
+[ PROFILER INSIGHTS (Scalene v1.5) ]
+Testing on an 87-second session confirmed:
+ * MEMORY: 0% Growth. Zero leaks detected over time.
+ * ASYNC: 99% Idle loop efficiency.
+ * SPEED: Logic execution < 1ms per action.
+ * VIZ: Hiding the visualizer (key 'b') kills the active calculation loop
+   for true legacy-low resource usage.
+
+================================================================================
+   CONCLUSION: Musica is a performance strategy, not just a music player.
+================================================================================

@@ -1,12 +1,5 @@
 <div align="center">
 
-# 🎵 Musica
-
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Textual](https://img.shields.io/badge/UI-Textual-green)](https://textual.textualize.io/)
-[![Rich](https://img.shields.io/badge/Styling-Rich-orange)](https://rich.readthedocs.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ```text
   __  __                 _                   
  |  \/  |               (_)                  
@@ -17,6 +10,12 @@
 ```
 
 **Light-weight • Minimalist • High Performance • Terminal Music Player**
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Textual](https://img.shields.io/badge/UI-Textual-green)](https://textual.textualize.io/)
+[![Rich](https://img.shields.io/badge/Styling-Rich-orange)](https://rich.readthedocs.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 *"The player that respects your system's resources as much as your playlist."*
 

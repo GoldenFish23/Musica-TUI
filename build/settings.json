@@ -1,0 +1,11 @@
+{
+    "settings": {
+        "theme": "monokai",
+        "glass_effect": false,
+        "scan_paths": [
+            "E:\\musica\\proto",
+            "E:\\musica\\tests"
+        ],
+        "visualizer": "enabled"
+    }
+}

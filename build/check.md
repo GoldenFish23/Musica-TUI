@@ -1,0 +1,6 @@
+- Settings path is editable. [done]
+- repeatable songs [done]
+- 
+- Settings visualizer 
+- Settings glass_effect
+- 

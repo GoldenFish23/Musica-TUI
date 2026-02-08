@@ -20,6 +20,10 @@
 
 ---
 
+![Musica TUI Screenshot](build/img/Interface-screenshot.png)
+
+---
+
 ## Why Musica?
 
 Most modern music players consume 200MB to 600MB of RAM. **Musica** stays under **35MB**, making it the perfect companion for:

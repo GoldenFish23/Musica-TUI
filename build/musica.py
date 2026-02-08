@@ -14,6 +14,9 @@ from themes import THEMES
 
 
 class Logo(Static):
+    """
+    This class is for building logo.
+    """
     border_style = reactive("cyan")
 
     def __init__(self):
@@ -31,12 +34,18 @@ class Logo(Static):
         )
 
 class TrackItem(ListItem):
+    """
+    This class represents a track item.
+    """
     def __init__(self, track_name: str, full_path: str):
         super().__init__(Label(track_name))
         self.track_name = track_name
         self.full_path = full_path
 
 class TrackManager:
+    """
+    This class manages the tracks.
+    """
     def __init__(self):
         self.tracks = [] 
 
@@ -54,7 +63,7 @@ class TrackManager:
                 settings = json.load(f)
             paths = settings["settings"]["scan_paths"]
             for path in paths:
-                if os.path.exists(path):
+                if os.path.exists(path) and os.path.isdir(path):
                     # Append new tracks found in this path (Case-insensitive check)
                     new_tracks = [
                         TrackItem(f, os.path.join(path, f)) 
@@ -62,7 +71,7 @@ class TrackManager:
                     ]
                     self.tracks.extend(new_tracks)
                 else:
-                    print(f"Warning: Scan path '{path}' does not exist.")
+                    print(f"Warning: Scan path '{path}' is not a valid directory.")
         except Exception as e:
             print(f"Error scanning tracks: {e}")
         return self.tracks  

@@ -1,3 +1,9 @@
+"""
+This module contains the themes for the UI.
+
+Edit the colors to your liking for better customization.
+"""
+
 THEMES = {
     "default": {
         "name": "Default Cyan",

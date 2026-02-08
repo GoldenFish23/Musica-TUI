@@ -1,4 +1,8 @@
+"""
+This module contains the player class to control audio playback.
+"""
 from just_playback import Playback
+
 class player(Playback):
     """A class to control audio playback."""
     def __init__(self):

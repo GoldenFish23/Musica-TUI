@@ -8,7 +8,7 @@
  |_|  |_|  \__,_| |___/ |_|  \___|  \__,_|   
 ```
 
-**Light-weight • Minimalist • High Performance • Terminal Music Player**
+**Light-weight • Minimalist • High Performance • Terminal Music Player • Offline Music Playing**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Textual](https://img.shields.io/badge/UI-Textual-green)](https://textual.textualize.io/)

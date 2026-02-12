@@ -1,6 +1,6 @@
 {
     "settings": {
-        "theme": "nord",
+        "theme": "default",
         "glass_effect": false,
         "scan_paths": [
             "E:\\musica\\proto",

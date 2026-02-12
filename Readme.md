@@ -36,7 +36,7 @@ Most modern music players consume 200MB to 600MB of RAM. **Musica** stays under 
 
 ## Features
 
-- **Instant Track Scanning**: Automatically finds and organizes your library from custom paths.
+- **Universal Track Scanning**: Automatically find and organize **MP3, WAV, FLAC, OGG, M4A, and MPEG** files.
 - **Fluid Visualizer**: A beautiful real-time wave visualizer (can be toggled live for zero-CPU mode).
 - **Dynamic Theming**: Nord, Monokai, Dracula, Sunset, and more. Tweak colors on the fly.
 - **Repeater Modes**: Loop single tracks or play your whole library.

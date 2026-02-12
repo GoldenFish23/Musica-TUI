@@ -73,6 +73,8 @@ python build/installer.py  # Install dependencies
 python build/musica.py     # Run the player
 ```
 
+### Remember to Update Path at Settings.json
+Note: The paths must be up-to-date for scanning the musics.
 ---
 
 ## How to Contribute

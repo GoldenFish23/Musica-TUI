@@ -62,12 +62,15 @@ class TrackManager:
             with open(settings_path, "r") as f:
                 settings = json.load(f)
             paths = settings["settings"]["scan_paths"]
+            # Define supported audio formats
+            EXTENSIONS = ('.mp3', '.wav', '.flac', '.ogg', '.m4a', '.mpeg')
+            
             for path in paths:
                 if os.path.exists(path) and os.path.isdir(path):
                     # Append new tracks found in this path (Case-insensitive check)
                     new_tracks = [
                         TrackItem(f, os.path.join(path, f)) 
-                        for f in os.listdir(path) if f.lower().endswith(".mp3")
+                        for f in os.listdir(path) if f.lower().endswith(EXTENSIONS)
                     ]
                     self.tracks.extend(new_tracks)
                 else:

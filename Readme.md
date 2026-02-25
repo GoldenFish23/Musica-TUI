@@ -20,7 +20,7 @@
 
 ---
 
-![Musica TUI Screenshot](build/img/Interface-screenshot.png)
+![Musica TUI Screenshot](build/img/Screenshot 2026-02-08 200614.png)
 
 ---
 

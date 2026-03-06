@@ -17,7 +17,9 @@
 
 
 *"The player that respects your system's resources as much as your playlist."*
-
+<div>
+  Visit Here: <a href = "https://goldenfish23.github.io/Musica-TUI/">Musica-TUI</a>
+</div>
 ---
 
 ![Musica TUI Screenshot](build/img/Screenshot_2026-02-08_200614.png)

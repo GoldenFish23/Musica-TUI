@@ -208,6 +208,17 @@ class MusicApp(App):
         self.apply_theme()
         # Ensure initial state matches settings
         self.call_after_refresh(self.watch_visualizer_enabled, self.visualizer_enabled)
+        self.call_after_refresh(self.auto_search_tracks, False)
+
+    def auto_search_tracks(self, notify: bool = True) -> None:
+        """Scan track folders and populate the playlist automatically."""
+        track_list_widget = self.query_one("#track-list", ListView)
+        track_list_widget.clear()
+        track_items = self.track_manager.scan_tracks()
+        for item in track_items:
+            track_list_widget.append(item)
+        if notify:
+            self.notify(f"Found {len(track_items)} tracks!")
 
     def compose(self) -> ComposeResult:
         """
@@ -229,15 +240,7 @@ class MusicApp(App):
         yield Footer()
 
     def action_scan(self) -> None:
-        track_list_widget = self.query_one("#track-list", ListView)
-        track_list_widget.clear()
-        
-        # Scan returns list of TrackItems now
-        track_items = self.track_manager.scan_tracks()
-        for item in track_items:
-            track_list_widget.append(item)
-        
-        self.notify(f"Found {len(track_items)} tracks!")
+        self.auto_search_tracks(True)
 
     def on_list_view_selected(self, event: ListView.Selected):
         # Retrieve full path from the selected TrackItem
@@ -293,6 +296,7 @@ class MusicApp(App):
             if enabled:
                 lv.remove_class("full-width")
                 viz.display = True
+                viz.is_playing = (self.player.audio_play_status == "play")
             else:
                 lv.add_class("full-width")
                 viz.display = False

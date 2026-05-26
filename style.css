@@ -290,6 +290,10 @@ nav {
     overflow: hidden;
 }
 
+.terminal-block a{
+    color: #a2d149;
+}
+
 .terminal-header {
     display: flex;
     gap: 8px;

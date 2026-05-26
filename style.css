@@ -292,6 +292,7 @@ nav {
 
 .terminal-block a{
     color: #a2d149;
+    text-decoration: none;
 }
 
 .terminal-header {
